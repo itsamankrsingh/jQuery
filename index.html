@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+  </head>
+  <body>
+    <p>This is my body</p>
+  </body>
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script>
+    console.log("We are learning jQuery");
+    //$('selector').action()
+    $("p").click(); //click on p
+    $("p").click(function () {
+      console.log("you clicked on p");
+      $("p").hide();
+    }); // do this when we click on p
+  </script>
+</html>
